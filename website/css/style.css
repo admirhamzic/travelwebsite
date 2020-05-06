@@ -1,7 +1,8 @@
+
 *{
 	margin: 0;
 	padding: 0;
-	font-family: Century Gothic;
+	font-family: Abril Fatface;
 }
 
 header{
@@ -38,7 +39,7 @@ ul li.active a{
 
 .logo img{
 	float: left;
-	width: 300px;
+	max-width: 25%;
 	height: auto;
 }
 
@@ -56,7 +57,8 @@ ul li.active a{
 
 .title h1{
 	color: #fff;
-	font-size: 70px;
+	font-family: Fredericka the Great;
+	font-size: 5vw;
 
 }
 .button{
@@ -79,16 +81,24 @@ ul li.active a{
 	color: #000;
 }
 
-audio { 
-	width: 250px; 
-	display: block; 
-	margin:20px; 
-}
-
 body {
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../sydney.jpg);
   background-attachment: fixed;
   background-position: center;
+}
+
+#topBtn{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
 }
 
 .column {
@@ -98,21 +108,236 @@ body {
   width: 50%;
 }
 
-.img {
-  background-color: #aaa;
-  width: 50%;
-  padding: 10px;
-}
-
 .card {
-  background-color: white;
+  background: #fff;
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
+  max-width: 80%;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  display: flex;
 }
 
+.card:hover{
+	box-shadow: 0 15px 30px rgba(0,0,0,.5);
+}
+
+.card .imgBx{
+	max-width: 35%;
+	flex: 150px;
+}
+
+.card .imgBx img {
+  background-color: #aaa;
+  max-width: 117%;
+  flex: 0 0 150
+}
+
+.card .content{
+	padding-left: 20px;
+}
+
+.card .content h2{
+	margin: 0;
+	padding-left: 0;
+	color: #000;
+	font-family: Caveat;
+	font-size: 2vw;
+}
+
+.card .content p{
+	margin: 0;
+	padding: 10px 0 0;
+	text-align: justify;
+	font-family: BenchNine;
+	font-size: 1.75vw;
+}
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
+.blockquote-wrapper {
+   display: flex;
+   height: 25vh;
+   padding: 0 20px;
+}
+
+.blockquote {
+    position: relative;
+    font-family: 'Barlow Condensed', sans-serif;
+    max-width: 525px;
+    margin: 30px auto;
+    align-self: center;
+}
+
+.blockquote h1 {
+    font-family: 'Abril Fatface', cursive;
+    position: relative;
+    color: #012169;
+    font-size: 2.2vw;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    border: 2px solid #012169;
+    border: solid 2px;
+    border-radius:20px;
+    padding: 20px;
+}
+
+.blockquote h1:after {
+    content:"";
+    position: absolute;
+    border: 2px solid #012169;
+    border-radius: 0 50px 0 0;
+    width: 80px;
+    height: 60px;
+    bottom: -61.5px;
+    left: 40px;
+    border-bottom: none;
+    border-left: none;
+    z-index: 3; 
+}
+
+.blockquote h1:before {
+    content:"";
+    position: absolute;
+    width: 80px;
+    border: 6px solid #fff;
+    bottom: -3px;
+    left: 50px;
+    z-index: 2;
+}
+
+.blockquote h4 {
+    position: relative;
+    color: #000;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 1;
+    margin-left:150px;
+    padding-left:12px;
+}
+
+ 
+.blockquote h4:first-letter {
+  margin-left:-12px;
+}
+
+.form-box{
+	max-width: 350px;
+	border: 1px solid #ced4da;
+	margin: 10% auto 0;
+}
+
+.radio-btn{
+	margin: 0 20px;
+}
+
+.radio-btn .btn{
+	margin: 20px 10px 20px 0;
+	box-shadow: none;
+}
+
+.radio-btn .btn::after{
+	content: "";
+	height: 15px;
+	width: 15px;
+	top: -2px;
+	left: -1px;
+	background-color: #fff;
+	position: relative;
+	display: inline-block;
+	border: 3px solid #fff;
+	visibility: visible;
+	border-radius: 50%;
+}
+
+.radio-btn .btn:checked:after{
+	content: "";
+	background-color: #000;
+	transition: 0.5s;
+}
+
+.radio-btn span{
+	color: #fff;
+	margin-right: 5px;
+	font-size: 12px;
+
+}
+
+.booking-form{
+	padding: 0 20px 20px;
+}
+
+.booking-form label{
+	margin-bottom: 5px;
+	margin-top: 10px;
+	font-size: 12px;
+	color: #fff;
+}
+
+input::placeholder{
+	color: #fff!important;
+}
+
+.input-grp{
+	width: 151px;
+	display: inline-block;
+}
+
+.form-control{
+	font-size: 12px!important;
+	border-radius: 0!important;
+	color: #fff!important;
+	background: transparent!important;
+	box-shadow: none!important;
+}
+
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button{
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.select-date::-webkit-calendar-picker-indicator{
+	background: transparent!important;
+}
+
+.custom-select{
+	color: #fff!important;
+	font-size: 12px!important;
+	border: 1px solid #ced4da!important;
+	box-shadow: none!important;
+	border-radius: 0!important;
+	background: transparent!important;
+}
+
+.custom-select option{
+	color: #333;
+}
+
+.flight{
+	width: 100%
+	padding: 9px 0!important;
+	font-size: 12px!important;
+	border: 1px solid #ced4da!important;
+	background: transparent!important;
+	box-shadow: none!important;
+	border-radius: 0!important;
+}
+
+.flight:hover{
+	background: #fff!important;
+	color: #000!important;
+	transition: 0.5s;
+}
+@media(max-width: 800px){
+	.column,.main, .form-box{
+		width: 100%;
+	}
+}
