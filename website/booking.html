@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BOOKING FORM</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="main">
+	<div class="logo">
+			<img src="logo.png">
+		</div>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li class="active"><a href="#">Bookings</a></li>
+	</ul>
+</div>
+<div class="form-box">
+<div class="radio-btn">
+	<input type="radio" class="btn" name="check" checked="checked"><span>Roundtrip</span>
+	<input type="radio" class="btn" name="check"><span>One Way Trip</span>
+	<input type="radio" class="btn" name="check"><span>Headshot</span>
+</div>
+
+<div class="booking-form">
+	<label>Flying From</label>
+	<input type="text" class="form-control" placeholder="City or Airport">
+	<label>Flying To</label>
+	<select class="custom-select">
+	<option value="1">Sydney</option>
+	<option value="1">Melbourne</option>
+	<option value="1">Outback</option>
+	<option value="1">Downunder</option>
+	</select>
+
+	<div class="input-grp">
+	<label>Departing</label>
+	<input type="date" class="form-control select-date">
+	</div>
+
+	<div class="input-grp">
+	<label>Returning</label>
+	<input type="date" class="form-control select-date">
+	</div>
+
+	<div class="input-grp">
+	<label>Adults</label>
+	<input type="number" class="form-control" value="1">
+	</div>
+
+	<div class="input-grp">
+	<label>Child</label>
+	<input type="number" class="form-control" value="0">
+	</div>
+
+	<div class="input-grp">
+	<label>Travel Class</label>
+	<select class="custom-select">
+	<option value="1">Economy</option>
+	<option value="1">Business</option>
+	<option value="1">Postnord</option>
+	<option value="1">Flaskpost</option>
+	</select>
+	</div>
+
+	<div class="input-grp">
+		<button type="button" class="btn btn-primary flight">Show Flights</button>
+	</div>
+</div>
+</div>
+</body>
+</html>
